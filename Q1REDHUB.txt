@@ -16,6 +16,11 @@ local success, Library = pcall(function()
 end)
 
 if not success then
+    print("Error occurred while loading library:", Library)
+    -- You can add further error handling here if needed
+end
+
+if not success then
     print("Error:", Library)
 end
 
