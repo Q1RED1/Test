@@ -15,6 +15,10 @@ local success, Library = pcall(function()
     end
 end)
 
+if not success then
+    print("Error:", Library)
+end
+
 if success then
     -- Use the Library object as needed
 else
